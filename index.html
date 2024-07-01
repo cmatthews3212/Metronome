@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/5f0a1544c3.js" crossorigin="anonymous"></script>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+    <link href="./assets/styles.css" rel="stylesheet">
+    <title>Complex Metronome</title>
+</head>
+<body>
+    <header>
+        <h1>Complex Metronome</h1>
+    </header>
+
+    <div class="top">
+        <div class="top-left">
+            <h3 id="bpm"></h3>
+            <p>bpm</p>
+        </div>
+
+        <div class="top-right">
+            <div id="time-signature">
+                <p>Beat</p>
+                <i class="fa-solid fa-plus"></i>
+                <i class="fa-solid fa-minus"></i>
+                <p id="time-number">4/4</p>
+                <p>____</p>
+                <i class="fa-solid fa-plus"></i>
+                <i class="fa-solid fa-minus"></i>
+                <p>Note</p>
+            </div>
+            <div id="divide">
+                <select name="divide-number" id="divide-number">
+                    <option value="0">Divide by 0</option>
+                    <option value="2">Divide by 2</option>
+                    <option value="4">Divide by 4</option>
+                </select>
+            </div>
+            <div id="accent">
+                <select name="accent-selection" id="accent-selection">
+                    <option value="on">Accent On</option>
+                    <option value="off">Accent Off</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <div class="center">
+        <div id="range">
+            <i class="fa-solid fa-minus" id="range-minus"></i>
+            <input type="range" min="40" max="218">
+            <i class="fa-solid fa-plus" id="range-plus"></i>
+        </div>
+        <div id="notes-4">
+            <div class="note1">
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="note"></div>
+            </div>
+            <div class="note2">
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="note"></div>
+            </div>
+            <div class="note3">
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="note"></div>
+            </div>
+            <div class="note4">
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="note"></div>
+            </div>
+        </div>
+        <!-- <div id="notes-2">
+            <div class="note1">
+                <div class="square"></div>
+                <div class="square"></div>
+            </div>
+            <div class="note2">
+                <div class="square"></div>
+                <div class="square"></div>
+            </div>
+            <div class="note3">
+                <div class="square"></div>
+                <div class="square"></div>
+            </div>
+            <div class="note4">
+                <div class="square"></div>
+                <div class="square"></div>
+            </div>
+
+        </div>
+        <div id="notes-0">
+            <div class="note1">
+                <div class="square"></div>
+            </div>
+            <div class="note2">
+                <div class="square"></div>
+            </div>
+            <div class="note3">
+                <div class="square"></div>
+            </div>
+            <div class="note4">
+                <div class="square"></div>
+            </div>
+
+        </div> -->
+    </div>
+
+    <div class="bottom">
+        <ol>
+            <li>
+                <i class="fa-solid fa-minus" id="range-minus"></i>
+                <p>____</p>
+                <i class="fa-solid fa-plus" id="range-plus"></i>
+            </li>
+        </ol>
+    </div>
+    
+</body>
+</html>
